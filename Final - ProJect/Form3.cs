@@ -69,14 +69,14 @@ namespace Final___ProJect
                     while (!reader.EndOfStream)
                     {
                         string[] line = reader.ReadLine().Split(',');
-                        if (line.Length >= 3)
+                        if (line.Length >= 5)
                         {
                             UserInfo userInfos = new UserInfo(
                                 line[0],
                                 line[1],
                                 line[2],
-                                line[4],
-                                line[5]
+                                line[3],
+                                line[4]
                             );
                             listInfo.Add(userInfos);
                         }
